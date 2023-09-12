@@ -4,7 +4,7 @@ Abaixo segue um guia de implantação no Microsoft Azure para Aplicação Java S
 
 Aqui vamos fornecer algumas instruções basicas, passo a passo para implantar aplicação Java Spring Boot com Thymeleaf no Microsoft Azure.
 
-###### Pré-requisitos:Pré-requisitos:
+###### Pré-requisitos:
 
     Conta no Microsoft Azure.
     Aplicação Java Spring Boot pronta para implantação.
