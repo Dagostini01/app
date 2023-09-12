@@ -10,15 +10,14 @@ insert into clientex (id, email, nome) values (8, 'fpowter7@dailymail.co.uk', 'F
 insert into clientex (id, email, nome) values (9, 'amccroary8@omniture.com', 'Aurora');
 insert into clientex (id, email, nome) values (10, 'amatovic9@youtu.be', 'Aili');
 
-
 --Inserir registros na tabela produtox
-insert into produtox (id, data, nome, cliente_id) values (1, '26/07/2008', 'Sheilakathryn', 1);
-insert into produtox (id, data, nome, cliente_id) values (2, '10/11/2021', 'Sandie', 2);
-insert into produtox (id, data, nome, cliente_id) values (3, '29/12/2000', 'Ernst', 3);
-insert into produtox (id, data, nome, cliente_id) values (4, '17/10/1994', 'Babs', 4);
-insert into produtox (id, data, nome, cliente_id) values (5, '09/06/2021', 'Beitris', 5);
-insert into produtox (id, data, nome, cliente_id) values (6, '12/10/2004', 'Carita', 6);
-insert into produtox (id, data, nome, cliente_id) values (7, '21/04/2010', 'Wyatt', 7);
-insert into produtox (id, data, nome, cliente_id) values (8, '03/11/2012', 'Roseanne', 8);
-insert into produtox (id, data, nome, cliente_id) values (9, '20/03/2019', 'Orren', 9);
-insert into produtox (id, data, nome, cliente_id) values (10, '29/11/1994', 'Donnie', 10);
+insert into produtox (id, data, nome, cliente_id) values (1, '26/07/2008', 'ERP Plusoft', 1);
+insert into produtox (id, data, nome, cliente_id) values (2, '10/11/2021', 'CRM Plusoft', 2);
+insert into produtox (id, data, nome, cliente_id) values (3, '29/12/2000', 'SCM Plusoft', 3);
+insert into produtox (id, data, nome, cliente_id) values (4, '17/10/1994', 'Sistema de controle de estoque', 4);
+insert into produtox (id, data, nome, cliente_id) values (5, '09/06/2021', 'Sistema de gestão de vendas', 5);
+insert into produtox (id, data, nome, cliente_id) values (6, '12/10/2004', 'Sistema de gestão de marketing', 6);
+insert into produtox (id, data, nome, cliente_id) values (7, '21/04/2010', 'Sistema de gestão de recursos humanos', 7);
+insert into produtox (id, data, nome, cliente_id) values (8, '03/11/2012', 'Sistema de gestão de projetos', 8);
+insert into produtox (id, data, nome, cliente_id) values (9, '20/03/2019', 'Sistema de gestão de atendimento ao cliente', 9);
+insert into produtox (id, data, nome, cliente_id) values (10, '29/11/1994', 'Sistema de gestão de logistica', 10);
