@@ -1,4 +1,6 @@
-Guia de Implantação no Microsoft Azure para Aplicação Java Spring Boot com Thymeleaf
+## Projeto Java MVC Azure Web App
+
+Abaixo segue um guia de implantação no Microsoft Azure para Aplicação Java Spring Boot com Thymeleaf
 
 Aqui vamos fornecer algumas instruções basicas, passo a passo para implantar aplicação Java Spring Boot com Thymeleaf no Microsoft Azure.
 
@@ -69,7 +71,19 @@ Após a implantação, você pode acessar sua aplicação usando o URL fornecido
 az webapp show --name <nome-do-seu-appservice>.
 ```
 
+ Exemplo real utilizado nessa aplicação, mais simplificado e comandos encadeados:
 
+
+```shell
+#clonar o repositorio:
+https://github.com/Dagostini01/sprint-fiap-mvc-java.git
+
+#entrar no diretorio clonado do projeto
+cd sprint-fiap-mvc-java
+```
+
+ 
+ ```shell
 az group create --name app-java --location eastus &&
 
 az appservice plan create --resource-group app-java --name app-java-plan --sku FREE &&
@@ -82,6 +96,10 @@ az webapp deployment source config --name app-java-webapp --resource-group app-j
 
 az webapp deployment source sync --name app-java-webapp --resource-group app-java &&
 
-mvn com.microsoft.azure:azure-webapp-maven-plugin:2.9.0:config && 
+mvn com.microsoft.azure:azure-webapp-maven-plugin:2.9.0:config &&
 
 mvn package azure-webapp:deploy -DskipTests
+
+```
+## Referências 
+Essa documentação teve como base [Azure Webapp Maven](https://github.com/microsoft/azure-maven-plugins/blob/develop/azure-webapp-maven-plugin/README.md) & [Deploy a Java EE application to Azure](https://www.youtube.com/watch?v=7EW2DZLlub8&t=4s)
