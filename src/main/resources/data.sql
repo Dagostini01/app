@@ -21,3 +21,19 @@ insert into produtox (id, data, nome, cliente_id) values (7, '21/04/2010', 'Sist
 insert into produtox (id, data, nome, cliente_id) values (8, '03/11/2012', 'Sistema de gestão de projetos', 8);
 insert into produtox (id, data, nome, cliente_id) values (9, '20/03/2019', 'Sistema de gestão de atendimento ao cliente', 9);
 insert into produtox (id, data, nome, cliente_id) values (10, '29/11/1994', 'Sistema de gestão de logistica', 10);
+
+-- Criação da tabela "clientex"
+CREATE TABLE clientex (
+    id NUMBER(10) PRIMARY KEY,
+    email VARCHAR2(255),
+    nome VARCHAR2(255)
+);
+
+-- Criação da tabela "produtox"
+CREATE TABLE produtox (
+    id NUMBER(10) PRIMARY KEY,
+    data DATE,
+    nome VARCHAR2(255),
+    cliente_id NUMBER(10),
+    CONSTRAINT fk_cliente FOREIGN KEY (cliente_id) REFERENCES clientex(id)
+);
